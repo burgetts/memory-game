@@ -108,6 +108,7 @@ function resetCards() {
 restartBtn = document.querySelector('button')
 restartBtn.addEventListener('click', function (){
   gameContainer.innerHTML = '';
+  shuffledColors = shuffle(shuffledColors)
   createDivsForColors(shuffledColors)
 })
 
